@@ -1,7 +1,7 @@
 GET http://localhost:3000/subscribers
 ###
 
-GET http://localhost:3000/subscribers/639479de0a3955e08b31bb0
+GET http://localhost:3000/subscribers/639479de0a3955e08b31bb0e
 
 ###
 POST http://localhost:3000/subscribers
@@ -10,4 +10,15 @@ Content-Type: application/json
 {
     "name": "Nguyen Tri",
     "subscribedtoChannel": "Code 10 lan"
+}
+
+###
+DELETE  http://localhost:3000/subscribers/639477877720ed66dcec3336
+
+###
+PATCH  http://localhost:3000/subscribers/6394775e7720ed66dcec3334
+Content-Type: application/json
+
+{
+    "name": "Tri New"
 }
